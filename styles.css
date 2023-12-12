@@ -84,7 +84,7 @@ section {
 
 #about-form {
   display: flex;
-  height: 25rem;
+  height: auto;
   margin: 2rem auto;
 }
 #about-form .about {
@@ -170,4 +170,51 @@ strong {
 }
 #form-attributes .form-attributes table tr{
   background-color: #fadbd7;
+}
+@media (max-width: 64rem) {
+  #main-section h1 {
+    font-size: 2rem;
+  }
+  #main-section p {
+    font-size: 1rem;
+  }
+  #main-section .button {
+    width: 15rem;
+  }
+  .button a {
+    font-size: 1rem;
+  }
+  #about-form{
+    margin-top: 4rem;
+  }
+}
+@media (max-width:56rem) {
+  #about-form{
+    flex-direction: column;
+  }
+  #about-form .about{
+    width: 100%;
+  }
+  #form-attributes{
+    flex-direction: column;
+  }
+  #form-attributes .form-attributes{
+    width: 100%;
+    margin: 1rem auto;
+  }
+}
+@media(max-width:37.5rem){
+  #main-section{
+    flex-direction: column;
+    margin:1rem auto;
+  }
+  #main-section .main{
+ width: 100%;
+    }
+  #main-section .left{
+  order: 1;
+  }
+  #main-section .right{
+    order: 0;
+    }
 }
