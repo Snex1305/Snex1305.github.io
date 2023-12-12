@@ -161,14 +161,14 @@ strong {
 #form-attributes .form-attributes table th,
 #form-attributes .form-attributes table tr,
 #form-attributes .form-attributes table td {
- font-size: 1.05rem;
- padding: 0.25rem 1rem;
+  font-size: 1.05rem;
+  padding: 0.25rem 1rem;
 }
-#form-attributes .form-attributes table th{
+#form-attributes .form-attributes table th {
   background-color: #f99a8d;
   color: white;
 }
-#form-attributes .form-attributes table tr{
+#form-attributes .form-attributes table tr {
   background-color: #fadbd7;
 }
 @media (max-width: 64rem) {
@@ -189,6 +189,18 @@ strong {
   }
 }
 @media (max-width:56rem) {
+    #main-section h1 {
+    font-size: 1.7rem;
+  }
+  #main-section p {
+    font-size: .9rem;
+  }
+  #main-section .button {
+    width: 13rem;
+  }
+  .button a {
+    font-size: .9rem;
+  }
   #about-form{
     flex-direction: column;
   }
@@ -202,6 +214,9 @@ strong {
     width: 100%;
     margin: 1rem auto;
   }
+  header a {
+ font-size:.8rem
+}
 }
 @media(max-width:37.5rem){
   #main-section{
