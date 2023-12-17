@@ -1,0 +1,273 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(252, 235, 235);
+}
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  text-align: center;
+  font-size: 2.7rem;
+  color: rgb(66, 66, 66);
+}
+h2,
+h3,
+h4,
+p {
+  text-align: center;
+  color: rgb(106, 105, 105);
+  margin: 0;
+}
+h2 {
+  font-size: 2.2rem;
+  margin: 1rem auto 3rem auto;
+}
+h3 {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+p {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+}
+/* header */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  border-bottom: 1px solid gray;
+}
+
+.circle {
+  position: absolute;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  top: -12.5rem;
+  left: -12.5rem;
+}
+.c2 {
+  background-color: rgba(0, 0, 255, 0.2);
+  width: 32rem;
+  height: 32rem;
+  top: -16rem;
+  left: -6.25rem;
+  z-index: -3;
+}
+.c1 {
+  z-index: -1;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+.c3 {
+  background-color: rgba(255, 255, 0, 0.2);
+  width: 18rem;
+  height: 18rem;
+  top: 3rem;
+  left: -9.35rem;
+  z-index: -2;
+}
+
+/* main */
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+main section {
+  margin-bottom: 3rem;
+}
+
+/* color section */
+
+#color ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+.color-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+}
+.gray {
+  background-color: gray;
+}
+.dodgerblue {
+  background-color: #1e90ff;
+}
+.turquoise {
+  background-color: turquoise;
+}
+.slateblue {
+  background-color: #6a5acd;
+}
+.white {
+  background-color: white;
+}
+.black {
+  background-color: black;
+}
+/* font family section */
+
+.font-family {
+  margin-top: 2rem;
+}
+.font-family li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.light h4,
+.light {
+  font-weight: 300;
+}
+.regular h4,
+.regular {
+  font-weight: 400;
+}
+.medium h4,
+.medium {
+  font-weight: 500;
+}
+
+.bold h4,
+.bold {
+  font-weight: bold;
+}
+.font {
+  border: 1px solid black;
+  background-color: white;
+  padding: 1rem;
+  width: 12rem;
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.roboto p,
+.roboto h4 {
+  font-family: "roboto", sans-serif;
+}
+.roboto-mono p,
+.roboto-mono h4 {
+  font-family: "roboto mono", sans-serif;
+}
+.lora p,
+.lora h4 {
+  font-family: "lora", sans-serif;
+}
+
+.font-family p {
+  font-size: 5rem;
+  margin: 0;
+}
+.font p::after {
+  top: 0.2rem;
+  right: 0.5rem;
+  content: "fontStyle";
+  font-size: 0.7rem;
+  position: absolute;
+}
+.font.regular p::after {
+  content: "Regular";
+}
+.font.light p::after {
+  content: "Light";
+}
+.font.bold p::after {
+  content: "Bold";
+}
+.font.medium p::after {
+  content: "Medium";
+}
+
+.font-family h4 {
+  font-size: 0.9rem;
+  margin: 0;
+}
+/* typography section */
+
+.font-lora {
+  font-family: "Lora", serif;
+  font-size: 1.3rem;
+}
+.font-lora.h1 {
+  font-size: 32px;
+}
+.font-lora.h2 {
+  font-size: 24px;
+}
+.font-roboto.h3 {
+  font-size: 18px;
+}
+.font-roboto.h4 {
+  font-size: 16px;
+}
+.font-roboto-mono.p {
+  font-size: 16px;
+}
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+
+}
+.font-roboto-mono {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 1.5rem;
+
+}
+
+.typography {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.typography li {
+  background-color: white;
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  width: 100%;
+  min-width: 22rem;
+  align-items: center;
+  border: 1px solid gray;
+  box-shadow: 1px 1px 3px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.typography-container h3,
+.typography-container p,
+.typography-container-p p {
+  text-align: left;
+  margin: 0.2rem 0;
+}
+.typography-container {
+  width: 30%;
+}
+.typography-container p {
+ font-size: 0.9rem;
+ text-align: left;
+}
+.typography-container-p {
+  width: 70%;
+}
