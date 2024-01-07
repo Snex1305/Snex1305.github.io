@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,206 +8,150 @@
     />
     <link
       rel="stylesheet"
-      href="/styles.css"
+      href="resource/css/styles.css"
     />
-
-    <title>HTML Forms</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Salsa&display=swap"
+      rel="stylesheet"
+    />
+    <title>Company Home Page with Flexbox</title>
   </head>
   <body>
-    <header>
-      <div id="logo"><a href="#">Logo</a></div>
-      <nav id="main-nav">
-        <ul>
-          <li><a href="#">Pocetna</a></li>
-          <li><a href="#about-form">o HTML formi</a></li>
-          <li><a href="#form-attributes">Atributi forme</a></li>
-        </ul>
-      </nav>
+    <!-- header -->
+    <header class="flex">
+      <h1>Beauty Centar</h1>
+      <ul class="nav flex">
+        <li><a href="#pocetna">Početna</a></li>
+        <li><a href="#usluge">Usluge</a></li>
+        <li><a href="#our-team">Naš tim</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
     </header>
+
+    <!-- main -->
     <main>
-      <section id="main-section">
-        <div class="main left">
-          <div>
-            <div class="content">
-              <h1>HTML Forms</h1>
-              <p>
-                Svi mi , uglavnom, znamo šta je to forma i kako izgleda
-                popunjavanje forme (što bismo rekli "po naški" - formular). A
-                kako izgleda HTML form-a i kako je napraviti, možete otkriti
-                ukoliko pritisnete na dugme ispod.
-              </p>
+      <!-- pocetna -->
+      <section
+        id="pocetna"
+        class="flex"
+      >
+        <div class="content">
+          <h2>Beauty Salon</h2>
+          <h4>Vreme je da zablistaš</h4>
+          <a
+            href=""
+            class="btn"
+            >Rezerviši termin</a
+          >
+        </div>
+      </section>
+      <!-- usluge -->
+
+      <section id="usluge">
+        <div class="text-content">
+   <h2>Usluge koje nudi Beauty Centar</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+          voluptate eligendi, soluta unde fugiat voluptatum.
+        </p>
+        </div>
+     
+        <div class="content">
+          <div class="services flex">
+            <div class="service flex makeup">
+              <img
+                class="img"
+                src="/resource/images/makeup.jpg"
+                alt=""
+              />
+              <p>Makeup</p>
             </div>
-            <div class="button"><a href="#about-form">Hajde da otkrijemo</a></div>
+
+            <div class="service flex nail">
+              <img
+                class="img"
+                src="/resource/images/woman-showing-her-beautiful-nails.jpg"
+                alt=""
+              />
+              <p>Manikir i Pedikir</p>
+            </div>
+
+            <div class="service flex massage">
+              <img
+                src="/resource/images/young-woman-receiving-head-massage-spa-center.jpg"
+                alt=""
+                class="img"
+              />
+              <p>Masaža lica</p>
+            </div>
           </div>
         </div>
-        <div class=" main right">
-          <img
-            src="img/12219240_4912307.svg"
-            alt=""
-          />
-        </div>
       </section>
-      <section id="about-form">
-        <div class=" about left">
-          <h2>&lt; form &gt; Element</h2>
-          <p>
-            HTML <strong>&lt; form &gt;</strong> element se koristi za
-            pravljenje HTML formulara i prikupljanje unešenih podataka od strane
-            korisnika. Gde se prikupljene informacije, u pozadini, šalju dalje
-            na obradu.
-          </p>
-          <p>Svaka forma sadrži neke od sledećih elemenata:</p>
-          <ul class="about-ul">
-            
-            <li>
-              <strong>&lt;label&gt; </strong>
-            </li>
-            <li>
-              <strong>&lt;input&gt;</strong>
-            </li>
-            <li>
-              <strong>&lt;textarea&gt;</strong>
-            </li>
-            <li>
-              <strong>&lt;select&gt;</strong>
-            </li>
-            <li>
-              <strong>&lt;datalist&gt;</strong>
-            </li>
-            <li>
-              <strong>&lt;option&gt;</strong>
-            </li>
-          </ul>
-        </div>
-        <div class=" about middle">
-          <table>
-            <p>
-             <strong>&lt;input&gt;</strong> element je najkorišćeniji element forme i može biti prikazan na nekoliko različitih
-              načina, u zavisnosti od <strong>type</strong> atributa:
-            </p>
-            <thead>
-              <th colspan="2">Vrste &lt;input&gt; elementa</th>
-            </thead>
-            <tbody>
-              <tr>
-                <th>Type</th>
-                <th>Objašnjenje</th>
-              </tr>
-              <tr>
-                <td>&lt;input type="text"&gt;</td>
-                <td>Prikazuje polje za unos teksta</td>
-              </tr>
-              <tr>
-                <td>&lt;input type="password"&gt;</td>
-                <td>Prikazuje polje za unos lozinke</td>
-              </tr>
-              <tr>
-                <td>&lt;input type="number"&gt;</td>
-                <td>Prikazuje polje za unos broja</td>
-              </tr>
-              <tr>
-                <td>&lt;input type="range"&gt;</td>
-                <td>Prikazuje klizača</td>
-              </tr>
-              <tr>
-                <td>&lt;input type="radio"&gt;</td>
-                <td>Prikazuje radio dugme (za selekciju jednog od više izbora)</td>
-              </tr>
-              <tr>
-              <td>&lt;input type="checkbox"&gt;</td>
-              <td>Prikazuje kvadrat za čekiranje (više izbora ili ni jednog)</td>
-            </tr>
-                <td>&lt;input type="submit"&gt;</td>
-                <td>Prikazuje dugme za slanje (podnošenje formulara)</td>
-              </tr>
-              <td>&lt;input type="button"&gt;</td>
-              <td>Prikazuje dugme na koje se može kliknuti</td>
-            </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="about right">
-        <img src="img/1510477_209784-P04PJ5-69.svg" alt="">
-        </div>
-      </section>
-      <hr>
-      <section id="form-attributes">
-        <div class="form-attributes left">
-          <table>
-            <thead>
-              <th colspan="2">Vrste &lt;input&gt; atributa</th>
-            </thead>
-            <tbody>
-              <tr>
-                <th> Atribut</th>
-              </tr>
-              <tr>
-                <td>&lt;input name="name"&gt;</td>
-              </tr>
-              <tr>
-                <td>&lt;input value="value"&gt;</td>
-              </tr>
-              <tr>
-                <td>&lt;input type="number"&gt;</td>
-              </tr>
-              <tr>
-                <td>&lt;input id="id"&gt;</td>
-              </tr>
-              <tr>
-                <td>&lt;input placeholder"&gt;</td>
-              </tr>
-              <td>&lt;input required&gt;</td>
-            </tr>
-                <td>&lt;input max="5"&gt;</td>
-              </tr>
-              <td>&lt;input min="1"&gt;</td>
-            </tr>
-          </tr>
-          <td>&lt;input maxlenght=""&gt;</td>
-        </tr>
-      </tr>
-      <td>&lt;input multiple&gt;</td>
-    </tr></tr>
-    <td>&lt;input step="1"&gt;</td>
-  </tr>
-  </tr>
-  <td>&lt;input pattern="[a-zA-Z]{0-9}"&gt;</td>
-</tr>
-            </tbody>
-          </table>
-        </div>
+      <!-- Naš tim   -->
 
- <div class="form-attributes right">
-    <table>
-      <thead>
-         <th colspan="2">HTML &lt;form&gt; atributi</th>
-            </thead>
-            <tbody>
-              <tr  >
-                <th>Vrsta</th>
-                <th>Objašnjenje</th>
-              </tr>
-              <tr>
-                <td>&lt;form action="/"&gt;</td>
-                <td>Action atribut definiše radnju koja će se izvršiti kada se obrazac pošalje.</td>
-              </tr>
-              <tr>
-                <td>&lt;form target="_blank"&gt;</td>
-                <td>Target atribut određuje gde da se prikaže odgovor koji je primljen nakon slanja obrazca</td>
-              </tr>
-              <tr>
-                <td>&lt;form method="POST"&gt;</td>
-                <td>Method atribut određuje HTTP metod koji će se koristiti prilikom slanja podataka obrazca.</td>
-              </tr>
-              <tr>
-                <td>&lt;form autocomplete="on"&gt;</td>
-                <td>Određuje da li forma treba da ima uključeno ili isključeno automatsko popunjavanje</td>
-              </tr>
-           
-            </tbody>
-          </table>
+      <section id="our-team">
+        <h2>Naš tim stručnjaka</h2>
+        <div class="team flex">
+          <div class="person">
+            <div class="img-container marija"></div>
+
+            <h4>Marija Nikić</h4>
+            <p>Makeup Artist</p>
+          </div>
+          <div class="person">
+            <div class="img-container jovana"></div>
+
+            <h4>Jovana Aćomović</h4>
+            <p>Nail artist</p>
+          </div>
+          <div class="person">
+            <div class="img-container isidora"></div>
+
+            <h4>Isidora Sekulić</h4>
+            <p>Massage expert</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- kontakt -->
+      <section
+        id="contact"
+        class="flex"
+      >
+        <div class="contact-info flex">
+          <i class="fa-solid fa-envelope"></i>
+          <h5>nekaadresa@beautysalon.com</h5>
+        </div>
+        <div class="contact-info flex">
+          <i class="fa-solid fa-phone"></i>
+          <h5>+382 (0) 68 123 456</h5>
+        </div>
+        <div class="contact-info flex">
+          <i class="fa-solid fa-location-dot"></i>
+          <h5>Džordža Vašingtona 17</h5>
         </div>
       </section>
     </main>
+    <footer>
+      <div class="copyright">
+        <p>copyright Beauty Salon 2023</p>
+      </div>
+    </footer>
   </body>
 </html>
